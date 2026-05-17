@@ -57,8 +57,8 @@
             </div>
         </div>
     </div>
-</form>
-<div class="mb-3">
+
+    <div class="mb-3">
         <button type="submit" [disabled]="submitting" class="btn btn-primary me-2">
             <span *ngIf="submitting" class="spinner-border spinner-border-sm me-1"></span>
             Update
@@ -67,6 +67,6 @@
             <span *ngIf="deleting" class="spinner-border spinner-border-sm me-1"></span>
             Delete
         </button>
-        <a routerLink="../" href="" class="btn btn-link">Cancel</a>
+        <a routerLink="../" class="btn btn-link">Cancel</a>
     </div>
 </form>
