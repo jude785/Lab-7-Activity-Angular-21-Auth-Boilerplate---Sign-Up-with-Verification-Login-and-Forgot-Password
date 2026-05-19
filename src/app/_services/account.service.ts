@@ -13,6 +13,7 @@ const baseUrl = `${environment.apiUrl}/accounts`;
 export class AccountService {
     private accountSubject: BehaviorSubject<Account | null>;
     public account: Observable<Account | null>;
+    
 
     constructor(
         private router: Router,
@@ -117,6 +118,7 @@ export class AccountService {
         const timeout = expires.getTime() - Date.now() - (60 * 1000);
         this.refreshTokenTimeout = setTimeout(() => this.refreshToken().subscribe(), timeout);
     }
+    
 
     private stopRefreshTokenTimer() {
         clearTimeout(this.refreshTokenTimeout);
