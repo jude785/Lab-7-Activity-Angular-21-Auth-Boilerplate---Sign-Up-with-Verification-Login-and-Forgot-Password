@@ -137,7 +137,6 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             account.isVerified = false;
             account.refreshTokens = [];
             delete account.confirmPassword;
-
             accounts.push(account);
             localStorage.setItem(accountsKey, JSON.stringify(accounts));
 
@@ -386,7 +385,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             return (document.cookie.split(';').find(x => x.includes('fakeRefreshToken')) || '=').split('=')[1];
         }
 
-    } 
+    }
 }
 
 export let fakeBackendProvider = {
