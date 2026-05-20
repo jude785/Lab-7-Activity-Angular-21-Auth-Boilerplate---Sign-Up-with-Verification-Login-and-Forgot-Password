@@ -3,7 +3,7 @@
 A full-featured Single Page Application (SPA) built with Angular 21, implementing a complete authentication system including Sign-Up with email verification, Login, JWT refresh token handling, Forgot Password, and Role-Based Access Control (RBAC).
 
 ## 🚀 Live Deployment
-- **Live Application URL**: https://ipt-2026-frontend.onrender.com
+- **Live Application URL**: https://ipt-2026-frontend-zrjq.onrender.com
 
 ## 🔗 Related Repository
 - **Backend (Node.js + MySQL API)**: https://github.com/jude785/Lab-6-Activity-Building-a-Node.js-TypeScript-MySQL-Boilerplate-API
