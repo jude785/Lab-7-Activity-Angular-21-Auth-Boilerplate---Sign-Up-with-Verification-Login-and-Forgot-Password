@@ -42,7 +42,6 @@ ngOnInit() {
         this.router.navigate([], { relativeTo: this.route, replaceUrl: true });
 
         this.accountService.validateResetToken(token)
-            .pipe(first())
             .subscribe({
                 next: () => {
                     this.token = token;
